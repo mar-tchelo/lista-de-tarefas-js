@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #13293d;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Water Brush', cursive;
+    letter-spacing: 2px;
+    color: #1b98e0;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    max-width: 1250px;     
+    margin: auto auto;
+    box-shadow: 0 0 20px #006494;
+}
+
+input{
+    height: 120px;
+    width: 80%;
+    font-size: 2rem;
+    padding-left: 1%;
+    background: #e8f1f2;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+}
+
+
+button.add{
+    width: 20%;
+    cursor: pointer;
+    background: #1b98e0;
+    color: #e8f1f2;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    border: none;
+    height: 120px;
+    font-weight: bold;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px;   
+    transition: all 0.3s ease-in-out;
+    
+}
+
+button.add:hover{
+    background: #247ba0;
+    letter-spacing: 0px;
+    color: #1b98e0;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1200px;
+    margin: auto auto;    
+    padding:40px;
+}
+
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: #e8f1f2;
+    height: 80px;
+    width: 100%;   
+    border-radius: 10px ;
+    margin-bottom: 5%;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+
+    box-shadow: 0 0 20px #006494;
+    
+}
+
+.item:hover{
+    box-shadow: none;
+}
+
+
+.item-icone{
+    flex:20%;
+    
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.item-nome{
+    flex:55%;    
+    font-size: 20px;
+    font-weight: bold;
+    color: #13293d;
+}
+
+.item-nome p::first-letter{
+    text-transform: uppercase;
+}
+
+.item-botao{
+    flex:25%;    
+   
+}
+
+.delete{
+    background: #a51b0b;
+    color: #e8f1f2;
+    border:none;
+    height: 80px;
+    width: 100%;
+    border-radius: 0 10px 10px 0 ;
+    font-size: 30px;
+
+    transition: all 0.5s;
+    font-weight: bold;
+}
+
+.delete:hover{
+    background: red;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.item.clicado{
+    background: #d4f6d9;
+}
+
+.item.clicado .item-nome{
+    text-decoration: line-through;
+    color: #07010177;
+}
+
+.mdi-check-circle{
+    color: green;
+}
